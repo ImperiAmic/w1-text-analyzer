@@ -1,4 +1,4 @@
-import { getParagraphsTotal } from "../analytics/index.js";
+import { getParagraphsTotal, getWordsTotal } from "../analytics/index.js";
 
 const totalsContainer = document.querySelector(".totals");
 const shortWordsContainer = document.querySelector(".short");
@@ -123,4 +123,5 @@ export const analyzeText = (text: string): void => {
   listenForbiddenWordsChanges(text);
 
   renderParagraphsTotal(getParagraphsTotal(text));
+  renderWordsTotal(getWordsTotal(text));
 };
