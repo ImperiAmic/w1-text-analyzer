@@ -43,3 +43,15 @@ export const getWordsList = (shortWords: string[]): string => {
   const listedShortWords = shortWords.toString();
   return listedShortWords;
 };
+
+export const getRepeatedWordCount = (
+  text: string,
+  repeatedWord: string
+): number => {
+  const words = text
+    .replaceAll("\n", " ")
+    .split(" ")
+    .filter((word) => word !== "");
+  const filteredWords = words.filter((word) => word === repeatedWord);
+  return filteredWords.length;
+};
