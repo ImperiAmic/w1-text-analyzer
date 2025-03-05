@@ -1,6 +1,7 @@
 import { testGetCharacterCount } from "./getCharacterCount.js";
 import { testGetParagraphsTotal } from "./getParagraphsTotal.js";
 import { testGetShortWordsCount } from "./getShortWordsCount.js";
+import { testGetRepeatedWordCount } from "./getWordCount.js";
 import { testGetWords } from "./getWords.js";
 import { testGetWordsTotal } from "./getWordsTotal.js";
 
@@ -9,3 +10,4 @@ testGetWordsTotal();
 testGetCharacterCount();
 testGetShortWordsCount();
 testGetWords();
+testGetRepeatedWordCount();
