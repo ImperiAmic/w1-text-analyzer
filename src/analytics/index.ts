@@ -19,3 +19,12 @@ export const getCharacterCount = (text: string): number => {
   const noSpacesText = text.replaceAll(" ", "");
   return noSpacesText.length;
 };
+
+export const getShortWordsCount = (text: string, maxLength = 4): number => {
+  const words = text
+    .replaceAll("\n", " ")
+    .split(" ")
+    .filter((word) => word !== "")
+    .filter((word) => word.length > maxLength);
+  return words.length;
+};
