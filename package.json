@@ -6,7 +6,8 @@
     "start": "serve public",
     "build": "tsc",
     "build:dev": "tsc --watch",
-    "test:paragraphsTotal": "node public/js/analytics/__tests__/paragraphsTotal.js"
+    "test": "node public/js/analytics/__tests__",
+    "test:dev": "node --watch public/js/analytics/__tests__"
   },
   "keywords": [],
   "author": "",

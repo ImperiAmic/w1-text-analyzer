@@ -1,78 +1,80 @@
-import { paragraphsTotal } from "../index.js";
+import { getParagraphsTotal } from "../index.js";
 
 const test1 = (): void => {
-  const text = `Hola nen
+  const text = `Què passa nen
 
-què tal`;
-  const expectedResult = 2;
+estic content
+les elits culturals
+      
 
-  console.log(`Texto a testear:
-${text}
-Expected result:
-${expectedResult}
-Actual result:`);
+      som nosaltres
 
-  if (paragraphsTotal(text) === expectedResult) {
-    console.log(`${paragraphsTotal(text)} OK ✅\n`);
+també`;
+  const paragraphsExpectedResult = 4;
+  const test = getParagraphsTotal(text) === paragraphsExpectedResult;
+
+  console.log(`Testing - getParagraphsTotal
+📝 Test: "${text}"
+🤔 Expected result: ${paragraphsExpectedResult}
+👀 Actual result: ${getParagraphsTotal(text)}`);
+
+  if (test) {
+    console.log(`Test is OK ✅\n`);
   } else {
-    console.log(`${paragraphsTotal(text)} KO ❌\n`);
+    console.log(`Test is KO ❌\n`);
   }
 };
-test1();
 
 const test2 = (): void => {
   const text = "Hola nen";
-  const expectedResult = 1;
+  const paragraphsExpectedResult = 1;
+  const test = getParagraphsTotal(text) === paragraphsExpectedResult;
 
-  console.log(`Texto a testear:
-${text}
-Expected result:
-${expectedResult}
-Actual result:`);
+  console.log(`Testing - getParagraphsTotal
+📝 Test: "${text}"
+🤔 Expected result: ${paragraphsExpectedResult}
+👀 Actual result: ${getParagraphsTotal(text)}`);
 
-  if (paragraphsTotal(text) === expectedResult) {
-    console.log(`${paragraphsTotal(text)} OK ✅\n`);
+  if (test) {
+    console.log(`Test is OK ✅\n`);
   } else {
-    console.log(`${paragraphsTotal(text)} KO ❌\n`);
+    console.log(`Test is KO ❌\n`);
   }
 };
-test2();
 
 const test3 = (): void => {
   const text = "";
-  const expectedResult = 0;
+  const paragraphsExpectedResult = 0;
+  const test = getParagraphsTotal(text) === paragraphsExpectedResult;
 
-  console.log(`Texto a testear:
-${text}
-Expected result:
-${expectedResult}
-Actual result:`);
+  console.log(`Testing - getParagraphsTotal
+📝 Test: "${text}"
+🤔 Expected result: ${paragraphsExpectedResult}
+👀 Actual result: ${getParagraphsTotal(text)}`);
 
-  if (paragraphsTotal(text) === expectedResult) {
-    console.log(`${paragraphsTotal(text)} OK ✅\n`);
+  if (test) {
+    console.log(`Test is OK ✅\n`);
   } else {
-    console.log(`${paragraphsTotal(text)} KO ❌\n`);
+    console.log(`Test is KO ❌\n`);
   }
 };
-test3();
 
 const test4 = (): void => {
   const text = " ";
-  const expectedResult = 0;
+  const paragraphsExpectedResult = 0;
+  const test = getParagraphsTotal(text) === paragraphsExpectedResult;
 
-  console.log(`Texto a testear:
-${text}
-Expected result:
-${expectedResult}
-Actual result:`);
+  console.log(`Testing - getParagraphsTotal
+📝 Test: "${text}"
+🤔 Expected result: ${paragraphsExpectedResult}
+👀 Actual result: ${getParagraphsTotal(text)}`);
 
-  if (paragraphsTotal(text) === expectedResult) {
-    console.log(`${paragraphsTotal(text)} OK ✅\n`);
+  if (test) {
+    console.log(`Test is OK ✅\n`);
   } else {
-    console.log(`${paragraphsTotal(text)} KO ❌\n`);
+    console.log(`Test is KO ❌\n`);
   }
 };
-test4();
 
 const test5 = (): void => {
   const text = `
@@ -80,18 +82,25 @@ const test5 = (): void => {
   
   
   `;
-  const expectedResult = 0;
+  const paragraphsExpectedResult = 0;
+  const test = getParagraphsTotal(text) === paragraphsExpectedResult;
 
-  console.log(`Texto a testear:
-${text}
-Expected result:
-${expectedResult}
-Actual result:`);
+  console.log(`Testing - getParagraphsTotal
+📝 Test: "${text}"
+🤔 Expected result: ${paragraphsExpectedResult}
+👀 Actual result: ${getParagraphsTotal(text)}`);
 
-  if (paragraphsTotal(text) === expectedResult) {
-    console.log(`${paragraphsTotal(text)} OK ✅\n`);
+  if (test) {
+    console.log(`Test is OK ✅\n`);
   } else {
-    console.log(`${paragraphsTotal(text)} KO ❌\n`);
+    console.log(`Test is KO ❌\n`);
   }
 };
-test5();
+
+export const testGetParagraphsTotal = (): void => {
+  test1();
+  test2();
+  test3();
+  test4();
+  test5();
+};

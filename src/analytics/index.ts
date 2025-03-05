@@ -1,19 +1,9 @@
-export const paragraphsTotal = (text: string): number => {
-  if (text === "" || text === " ") {
-    return 0;
-  }
+export const getParagraphsTotal = (text: string): number => {
+  const noSpacesText = text.replaceAll(" ", "");
+  const splittedNoSpacesText = noSpacesText.split("\n\n");
+  const filteredSplittedNoSpacesText = splittedNoSpacesText.filter(
+    (text) => text !== "" && text !== "\n"
+  );
 
-  const trimmedText = text.trim();
-
-  if (trimmedText === "") {
-    return 0;
-  }
-
-  const lineFeed = "\n\n";
-
-  const splittedText = text.split(lineFeed);
-
-  const splittedTextCount = splittedText.length;
-
-  return splittedTextCount;
+  return filteredSplittedNoSpacesText.length;
 };
