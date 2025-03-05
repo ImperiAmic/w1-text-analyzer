@@ -25,6 +25,6 @@ export const getShortWordsCount = (text: string, maxLength = 4): number => {
     .replaceAll("\n", " ")
     .split(" ")
     .filter((word) => word !== "")
-    .filter((word) => word.length > maxLength);
+    .filter((word) => word.length < maxLength);
   return words.length;
 };
