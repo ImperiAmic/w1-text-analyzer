@@ -1,6 +1,7 @@
 import {
   getCharacterCount,
   getParagraphsTotal,
+  getRepeatedWordCount,
   getShortWords,
   getShortWordsCount,
   getWordsList,
@@ -115,7 +116,7 @@ const listenFrequenciesChanges = (text: string): void => {
         const word = (event.target as HTMLInputElement).value;
 
         // Implement the frequency calculation here and delete this 0
-        const frequency = 0;
+        const frequency = getRepeatedWordCount(text, word);
 
         frequenciesContainer.querySelector(
           `.word-${index + 1}-frequency`
