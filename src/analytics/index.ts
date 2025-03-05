@@ -28,3 +28,18 @@ export const getShortWordsCount = (text: string, maxLength = 4): number => {
     .filter((word) => word.length < maxLength);
   return words.length;
 };
+
+export const getShortWords = (text: string, maxLength = 4): string[] => {
+  const words = text
+    .replaceAll("\n", " ")
+    .split(" ")
+    .filter((word) => word !== "")
+    .filter((word) => word.length < maxLength);
+
+  return words;
+};
+
+export const getWordsList = (shortWords: string[]): string => {
+  const listedShortWords = shortWords.toString();
+  return listedShortWords;
+};
