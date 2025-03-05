@@ -14,3 +14,8 @@ export const getWordsTotal = (text: string): number => {
   const words = splittedText.filter((word) => word !== "");
   return words.length;
 };
+
+export const getCharacterCount = (text: string): number => {
+  const noSpacesText = text.replaceAll(" ", "");
+  return noSpacesText.length;
+};
