@@ -1,4 +1,4 @@
-export const paragraphCount = (text: string): number => {
+export const paragraphsTotal = (text: string): number => {
   if (text === "" || text === " ") {
     return 0;
   }

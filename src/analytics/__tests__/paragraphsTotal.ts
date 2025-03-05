@@ -1,4 +1,4 @@
-import { paragraphCount } from "../index.js";
+import { paragraphsTotal } from "../index.js";
 
 const test1 = (): void => {
   const text = `Hola nen
@@ -12,10 +12,10 @@ Expected result:
 ${expectedResult}
 Actual result:`);
 
-  if (paragraphCount(text) === expectedResult) {
-    console.log(`${paragraphCount(text)} OK ✅\n`);
+  if (paragraphsTotal(text) === expectedResult) {
+    console.log(`${paragraphsTotal(text)} OK ✅\n`);
   } else {
-    console.log(`${paragraphCount(text)} KO ❌\n`);
+    console.log(`${paragraphsTotal(text)} KO ❌\n`);
   }
 };
 test1();
@@ -30,10 +30,10 @@ Expected result:
 ${expectedResult}
 Actual result:`);
 
-  if (paragraphCount(text) === expectedResult) {
-    console.log(`${paragraphCount(text)} OK ✅\n`);
+  if (paragraphsTotal(text) === expectedResult) {
+    console.log(`${paragraphsTotal(text)} OK ✅\n`);
   } else {
-    console.log(`${paragraphCount(text)} KO ❌\n`);
+    console.log(`${paragraphsTotal(text)} KO ❌\n`);
   }
 };
 test2();
@@ -48,10 +48,10 @@ Expected result:
 ${expectedResult}
 Actual result:`);
 
-  if (paragraphCount(text) === expectedResult) {
-    console.log(`${paragraphCount(text)} OK ✅\n`);
+  if (paragraphsTotal(text) === expectedResult) {
+    console.log(`${paragraphsTotal(text)} OK ✅\n`);
   } else {
-    console.log(`${paragraphCount(text)} KO ❌\n`);
+    console.log(`${paragraphsTotal(text)} KO ❌\n`);
   }
 };
 test3();
@@ -66,10 +66,10 @@ Expected result:
 ${expectedResult}
 Actual result:`);
 
-  if (paragraphCount(text) === expectedResult) {
-    console.log(`${paragraphCount(text)} OK ✅\n`);
+  if (paragraphsTotal(text) === expectedResult) {
+    console.log(`${paragraphsTotal(text)} OK ✅\n`);
   } else {
-    console.log(`${paragraphCount(text)} KO ❌\n`);
+    console.log(`${paragraphsTotal(text)} KO ❌\n`);
   }
 };
 test4();
@@ -88,10 +88,10 @@ Expected result:
 ${expectedResult}
 Actual result:`);
 
-  if (paragraphCount(text) === expectedResult) {
-    console.log(`${paragraphCount(text)} OK ✅\n`);
+  if (paragraphsTotal(text) === expectedResult) {
+    console.log(`${paragraphsTotal(text)} OK ✅\n`);
   } else {
-    console.log(`${paragraphCount(text)} KO ❌\n`);
+    console.log(`${paragraphsTotal(text)} KO ❌\n`);
   }
 };
 test5();
