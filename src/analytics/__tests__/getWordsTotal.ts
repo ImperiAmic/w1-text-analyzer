@@ -1,4 +1,3 @@
-import test from "node:test";
 import { getWordsTotal } from "../index.js";
 
 const test1 = (): void => {
