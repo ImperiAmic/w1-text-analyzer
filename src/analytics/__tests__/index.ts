@@ -5,6 +5,7 @@ import { testGetRepeatedWordCount } from "./getRepeatedWordCount.js";
 import { testGetWords } from "./getWords.js";
 import { testGetWordsTotal } from "./getWordsTotal.js";
 import { testGetRevertedText } from "./getReverdedText.js";
+import { testHideWords } from "./hideWords.js";
 
 testGetParagraphsTotal();
 testGetWordsTotal();
@@ -13,3 +14,4 @@ testGetShortWordsCount();
 testGetWords();
 testGetRepeatedWordCount();
 testGetRevertedText();
+testHideWords();
