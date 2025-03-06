@@ -2,6 +2,7 @@ import {
   getCharacterCount,
   getParagraphsTotal,
   getRepeatedWordCount,
+  getReverdedText,
   getShortWords,
   getShortWordsCount,
   getWordsList,
@@ -134,4 +135,5 @@ export const analyzeText = (text: string): void => {
   renderCharactersTotal(getCharacterCount(text));
   renderShortWordsTotal(getShortWordsCount(text));
   renderShortWordsList(getWordsList(getShortWords(text)));
+  renderReversedText(getReverdedText(text));
 };
