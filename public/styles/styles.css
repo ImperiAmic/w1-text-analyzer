@@ -33,6 +33,12 @@ input {
   padding: 5px;
 }
 
+input:focus {
+  background-color: #666;
+  color: #fff;
+  border: solid blue;
+}
+
 a {
   color: inherit;
 }
