@@ -1,4 +1,5 @@
 import {
+  getCamelCase,
   getCharacterCount,
   getParagraphsTotal,
   getRepeatedWordCount,
@@ -137,4 +138,5 @@ export const analyzeText = (text: string): void => {
   renderShortWordsTotal(getShortWordsCount(text));
   renderShortWordsList(getWordsList(getShortWords(text)));
   renderReversedText(getReverdedText(text));
+  renderCamelCase(getCamelCase(text));
 };
