@@ -16,6 +16,10 @@ button {
   font: inherit;
 }
 
+textarea {
+  padding: 10px;
+}
+
 button {
   background-color: transparent;
   border: none;
@@ -31,6 +35,10 @@ a {
 
 h2 {
   margin-top: 0;
+}
+
+.analysis__item {
+  margin: 5px 0px;
 }
 
 .button {
