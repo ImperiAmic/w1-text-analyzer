@@ -65,3 +65,21 @@ export const getReverdedText = (text: string): string => {
 
   return wordsReversed;
 };
+
+export const hideForbiddenWords = (
+  text: string,
+  hiddenWords: string[]
+): string => {
+  const words = text.split(" ");
+  const hiddenText: string[] = [];
+
+  words.forEach((word) => {
+    if (hiddenWords.some((hiddenWord) => hiddenWord === word)) {
+      hiddenText.push("*");
+    } else {
+      hiddenText.push(word);
+    }
+  });
+
+  return hiddenText.join(" ");
+};
