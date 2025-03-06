@@ -7,6 +7,7 @@ import {
   getShortWordsCount,
   getWordsList,
   getWordsTotal,
+  hideForbiddenWords,
 } from "../analytics/index.js";
 
 const totalsContainer = document.querySelector(".totals");
@@ -104,7 +105,7 @@ const listenForbiddenWordsChanges = (text: string): void => {
         /,\s*/
       );
 
-      // Render the forbidden words
+      hideForbiddenWords(text, forbiddenWords);
     });
 };
 
@@ -136,4 +137,5 @@ export const analyzeText = (text: string): void => {
   renderShortWordsTotal(getShortWordsCount(text));
   renderShortWordsList(getWordsList(getShortWords(text)));
   renderReversedText(getReverdedText(text));
+  renderForbiddenWords(text);
 };
