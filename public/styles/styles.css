@@ -37,10 +37,6 @@ h2 {
   margin-top: 0;
 }
 
-.analysis__item {
-  margin: 5px 0px;
-}
-
 .button {
   background-color: #666;
   color: #fff;
@@ -88,12 +84,14 @@ h2 {
   padding: 10px;
   border: 2px solid #333;
   background-color: beige;
+  margin: 5px 0px;
 }
 
 .frequencies-list {
-  display: flex;
-  flex-direction: column;
+  display: inline-flex;
+  list-style-type: none;
   gap: 10px;
+  padding: 0;
   input {
     width: 110px;
   }
