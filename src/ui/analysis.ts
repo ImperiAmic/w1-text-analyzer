@@ -115,7 +115,6 @@ const listenFrequenciesChanges = (text: string): void => {
         // The variable word contains the text entered by the user in the input
         const word = (event.target as HTMLInputElement).value;
 
-        // Implement the frequency calculation here and delete this 0
         const frequency = getRepeatedWordCount(text, word);
 
         frequenciesContainer.querySelector(
