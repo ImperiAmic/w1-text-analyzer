@@ -105,7 +105,7 @@ const listenForbiddenWordsChanges = (text: string): void => {
         /,\s*/
       );
 
-      hideForbiddenWords(text, forbiddenWords);
+      renderForbiddenWords(hideForbiddenWords(text, forbiddenWords));
     });
 };
 
@@ -137,5 +137,4 @@ export const analyzeText = (text: string): void => {
   renderShortWordsTotal(getShortWordsCount(text));
   renderShortWordsList(getWordsList(getShortWords(text)));
   renderReversedText(getReverdedText(text));
-  renderForbiddenWords(text);
 };
