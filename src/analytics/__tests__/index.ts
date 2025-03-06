@@ -6,6 +6,7 @@ import { testGetWords } from "./getWords.js";
 import { testGetWordsTotal } from "./getWordsTotal.js";
 import { testGetRevertedText } from "./getReverdedText.js";
 import { testHideWords } from "./hideWords.js";
+import { testGetCamelCase } from "./getCamelCase.js";
 
 testGetParagraphsTotal();
 testGetWordsTotal();
@@ -15,3 +16,4 @@ testGetWords();
 testGetRepeatedWordCount();
 testGetRevertedText();
 testHideWords();
+testGetCamelCase();
