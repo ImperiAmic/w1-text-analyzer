@@ -55,3 +55,13 @@ export const getRepeatedWordCount = (
   const filteredWords = words.filter((word) => word === repeatedWord);
   return filteredWords.length;
 };
+
+export const getReverdedText = (text: string): string => {
+  const words = text.split(" ");
+  const wordsCharacters: string[] = words.map((word) =>
+    word.split("").reverse().join("")
+  );
+  const wordsReversed = wordsCharacters.join(" ");
+
+  return wordsReversed;
+};
