@@ -156,9 +156,7 @@ h2 {
   }
 }
 
-.camel-case-text,
-.kebab-case-text,
-.snake-case-text {
+.camel-case-text {
   word-wrap: break-word;
 }
 
@@ -219,9 +217,4 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
-}
-
-.palindromes a {
-  display: block;
-  margin-bottom: 15px;
 }
