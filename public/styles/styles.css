@@ -144,11 +144,17 @@ h2 {
 }
 
 .analysis__item {
+  display: none;
   padding: 10px;
   border: 2px solid #333;
   background-color: #d1ffd1;
   gap: 50px;
   border-radius: 10px;
+
+  &.show-item {
+    display: flex;
+    gap: 50px;
+  }
 }
 
 .frequencies-list {
