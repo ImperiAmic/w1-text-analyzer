@@ -54,18 +54,27 @@ h2 {
   font-size: large;
 }
 
-.button {
+form {
+  display: flex;
+}
+
+.analyze-button {
   background-color: #666;
   color: #fff;
   padding: 5px 10px;
+  align-self: end;
   width: 150px;
-  margin-left: auto;
   border: 1px solid black;
 }
 
-.button:hover {
+.analyze-button:hover {
   background-color: transparent;
   color: black;
+}
+
+.analyze-button:disabled {
+  opacity: 0.24;
+  cursor: not-allowed;
 }
 
 .container {
