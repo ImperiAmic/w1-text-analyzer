@@ -15,8 +15,17 @@ body {
   background-color: #222;
   color: #fff;
 
-  & .analysis__item {
+  .analysis__item {
     background-color: #002e00;
+  }
+
+  .analyze-button {
+    border: 1px solid white;
+
+    &:hover {
+      background-color: transparent;
+      color: white;
+    }
   }
 }
 
@@ -74,17 +83,27 @@ form {
   align-self: end;
   width: 150px;
   border: 1px solid black;
+
+  &:hover {
+    background-color: transparent;
+    color: black;
+  }
+
+  &:disabled {
+    opacity: 0.24;
+    cursor: not-allowed;
+  }
 }
 
-.analyze-button:hover {
+/* .analyze-button:hover {
   background-color: transparent;
   color: black;
-}
+} */
 
-.analyze-button:disabled {
+/* .analyze-button:disabled {
   opacity: 0.24;
   cursor: not-allowed;
-}
+} */
 
 .container {
   max-width: 800px;
