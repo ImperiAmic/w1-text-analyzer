@@ -11,6 +11,15 @@ body {
   background-color: #ffd1d1;
 }
 
+.dark {
+  background-color: #222;
+  color: #fff;
+
+  & .analysis__item {
+    background-color: #002e00;
+  }
+}
+
 h1 {
   text-decoration: underline;
 }
