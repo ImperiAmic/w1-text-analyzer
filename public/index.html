@@ -11,6 +11,7 @@
 </head>
 
 <body>
+
   <div class="container">
     <header class="header">
       <h1>Text Analyzer</h1>
@@ -28,40 +29,38 @@
       </div>
     </form>
 
-    <div class="filter-master">
-
-      <ul class="filter-list">
-        <li class="filter">
-          <input type="checkbox" id="filter-totals">
-          <label for="filter-totals">Totals</label>
-        </li>
-        <li class="filter">
-          <input type="checkbox" id="filter-short-words">
-          <label for="filter-short-words">Short words</label>
-        </li>
-        <li class="filter">
-          <input type="checkbox" id="filter-frequencies">
-          <label for="filter-frequencies">Frequencies</label>
-        </li>
-        <li class="filter">
-          <input type="checkbox" id="filter-reversed-words">
-          <label for="filter-reversed-words">Reversed words</label>
-        </li>
-        <li class="filter">
-          <input type="checkbox" id="filter-forbidden-words">
-          <label for="filter-forbidden-words">Forbidden Words</label>
-        </li>
-        <li class="filter">
-          <input type="checkbox" id="filter-camel-case">
-          <label for="filter-camel-case">Camel case</label>
-        </li>
-      </ul>
-
-
-    </div>
-
     <div class="analysis">
-      <div class="analysis__item totals">
+
+      <div class="filter-master">
+        <ul class="filter-list">
+          <li class="filter">
+            <input type="checkbox" id="filter-totals" checked>
+            <label for="filter-totals">Totals</label>
+          </li>
+          <li class="filter">
+            <input type="checkbox" id="filter-short-words" checked>
+            <label for="filter-short-words">Short words</label>
+          </li>
+          <li class="filter">
+            <input type="checkbox" id="filter-frequencies" checked>
+            <label for="filter-frequencies">Frequencies</label>
+          </li>
+          <li class="filter">
+            <input type="checkbox" id="filter-reversed-words" checked>
+            <label for="filter-reversed-words">Reversed words</label>
+          </li>
+          <li class="filter">
+            <input type="checkbox" id="filter-forbidden-words" checked>
+            <label for="filter-forbidden-words">Forbidden Words</label>
+          </li>
+          <li class="filter">
+            <input type="checkbox" id="filter-camel-case" checked>
+            <label for="filter-camel-case">Camel case</label>
+          </li>
+        </ul>
+      </div>
+
+      <div class="analysis__item totals show-item">
         <h2>Totals</h2>
         <ul>
           <li>Paragraphs: <span class="paragraphs-count"></span></li>
@@ -70,11 +69,11 @@
           <li>Short words: <span class="short-words-count"></span></li>
         </ul>
       </div>
-      <div class="analysis__item short">
+      <div class="analysis__item short show-item">
         <h2>Short words</h2>
         <span class="short-words"></span>
       </div>
-      <div class="analysis__item frequencies">
+      <div class="analysis__item frequencies show-item">
         <h2>Frequencies</h2>
         <ul class="frequencies-list">
           <li class="frequency">
@@ -94,11 +93,11 @@
           </li>
         </ul>
       </div>
-      <div class="analysis__item reversed-words">
+      <div class="analysis__item reversed-words show-item">
         <h2>Reversed words</h2>
         <span class="reversed-words-list"></span>
       </div>
-      <div class="analysis__item forbidden">
+      <div class="analysis__item forbidden show-item">
         <h2>Forbidden words</h2>
         <div>
           <label for="forbidden-words">Forbidden words:</label>
@@ -106,7 +105,7 @@
         </div>
         <span class="censured-text"></span>
       </div>
-      <div class="analysis__item camel-case">
+      <div class="analysis__item camel-case show-item">
         <h2>Camel case</h2>
         <span class="camel-case-text"></span>
       </div>

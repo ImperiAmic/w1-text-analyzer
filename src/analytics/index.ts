@@ -11,7 +11,7 @@ export const getParagraphsTotal = (text: string): number => {
 export const getWordsTotal = (text: string): number => {
   const noParagraphText = text.replaceAll("\n", "");
   const splittedText = noParagraphText.split(" ");
-  const words = splittedText.filter((word) => word !== "");
+  const words = splittedText.filter((word) => word !== " ");
   return words.length;
 };
 
