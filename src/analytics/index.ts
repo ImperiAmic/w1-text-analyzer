@@ -94,7 +94,7 @@ export const getCamelCase = (text: string): string => {
   const toLowerCaseFirstWord = words.shift()?.toLowerCase();
 
   const followingWords = words.map(
-    (word) => word[0].toUpperCase() + word.slice(1)
+    (word) => word[0]?.toUpperCase() + word.slice(1)
   );
   const joinedFollowingWords = followingWords.join("");
 
