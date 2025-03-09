@@ -56,12 +56,16 @@ button {
 
 input {
   padding: 5px;
+  border: solid #0000ff;
 }
 
 input:focus {
   background-color: #666;
   color: #fff;
-  border: solid blue;
+
+  + .slider {
+    box-shadow: 0 0 1px #222;
+  }
 }
 
 a {
@@ -216,9 +220,9 @@ input:checked + .slider {
   background-color: #222;
 }
 
-input:focus + .slider {
+/* input:focus + .slider {
   box-shadow: 0 0 1px #222;
-}
+} */
 
 input:checked + .slider:before {
   -webkit-transform: translateX(26px);
