@@ -20,8 +20,8 @@ const test1 = (): void => {
 
 const test2 = (): void => {
   const text = `Què passa nen
-estic content`;
-  const getShortWordsCountExpectedResult = 2;
+estic content hola`;
+  const getShortWordsCountExpectedResult = 3;
   const test = getShortWordsCount(text) === getShortWordsCountExpectedResult;
 
   console.log(`📝 Test: "${text}"
