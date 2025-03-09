@@ -141,7 +141,7 @@ a {
   flex-direction: column;
 
   &.show {
-    display: flex;
+    display: grid;
     gap: 15px;
   }
 }
@@ -156,23 +156,25 @@ a {
   padding: 10px;
   border: 2px solid #333;
   background-color: #d1ffd1;
-  gap: 50px;
   border-radius: 10px;
 
   &.show-item {
-    display: flex;
-    gap: 50px;
+    display: grid;
   }
 }
 
 .frequencies-list {
   display: inline-flex;
   list-style-type: none;
-  gap: 10px;
+  gap: 24px;
   padding: 0;
   input {
     width: 110px;
   }
+}
+
+.censured-text {
+  margin-top: 10px;
 }
 
 .camel-case-text {
