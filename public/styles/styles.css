@@ -70,10 +70,10 @@ input:focus {
 
 a {
   color: inherit;
-}
 
-a:hover {
-  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 h2 {
