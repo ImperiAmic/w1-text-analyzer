@@ -1,12 +1,13 @@
 import { getCharacterCount } from "../index.js";
 
+const testName = "getCharacterCount function";
+
 const test1 = (): void => {
   const text = "Què passa";
   const getCharacterCountExpectedResult = 8;
   const test = getCharacterCount(text) === getCharacterCountExpectedResult;
 
-  console.log(`Testing - getCharacterCount
-📝 Test: "${text}"
+  console.log(`📝 Test: "${text}"
 🤔 Expected result: ${getCharacterCountExpectedResult}
 👀 Actual result: ${getCharacterCount(text)}`);
 
@@ -23,8 +24,7 @@ nen`;
   const getCharacterCountExpectedResult = 12;
   const test = getCharacterCount(text) === getCharacterCountExpectedResult;
 
-  console.log(`Testing - getCharacterCount
-📝 Test: "${text}"
+  console.log(`📝 Test: "${text}"
 🤔 Expected result: ${getCharacterCountExpectedResult}
 👀 Actual result: ${getCharacterCount(text)}`);
 
@@ -42,8 +42,7 @@ const test3 = (): void => {
   const getCharacterCountExpectedResult = 13;
   const test = getCharacterCount(text) === getCharacterCountExpectedResult;
 
-  console.log(`Testing - getCharacterCount
-📝 Test: "${text}"
+  console.log(`📝 Test: "${text}"
 🤔 Expected result: ${getCharacterCountExpectedResult}
 👀 Actual result: ${getCharacterCount(text)}`);
 
@@ -59,8 +58,7 @@ const test4 = (): void => {
   const getCharacterCountExpectedResult = 0;
   const test = getCharacterCount(text) === getCharacterCountExpectedResult;
 
-  console.log(`Testing - getCharacterCount
-📝 Test: "${text}"
+  console.log(`📝 Test: "${text}"
 🤔 Expected result: ${getCharacterCountExpectedResult}
 👀 Actual result: ${getCharacterCount(text)}`);
 
@@ -72,8 +70,12 @@ const test4 = (): void => {
 };
 
 export const testGetCharacterCount = (): void => {
+  console.log(`👋👋 NEW TEST 👋👋
+--> ${testName} <--\n`);
   test1();
   test2();
   test3();
   test4();
+  console.log(`-->${testName} <--
+🔚🔚 END OF TEST 🔚🔚\n`);
 };

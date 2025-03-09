@@ -1,12 +1,13 @@
 import { getCamelCase } from "../index.js";
 
+const testName = "getCamelCase function";
+
 const test1 = (): void => {
   const text = "Què pasa neng estic content";
   const getCamelCaseExpectedResult = "quèPasaNengEsticContent";
   const test = getCamelCase(text) === getCamelCaseExpectedResult;
 
-  console.log(`Testing - getCamelCase
-📝 Test: "${text}"
+  console.log(`📝 Test: "${text}"
 🤔 Expected result: ${getCamelCaseExpectedResult}
 👀 Actual result: ${getCamelCase(text)}`);
 
@@ -22,8 +23,7 @@ const test2 = (): void => {
   const getCamelCaseExpectedResult = "";
   const test = getCamelCase(text) === getCamelCaseExpectedResult;
 
-  console.log(`Testing - getCamelCase
-📝 Test: "${text}"
+  console.log(`📝 Test: "${text}"
 🤔 Expected result: ${getCamelCaseExpectedResult}
 👀 Actual result: ${getCamelCase(text)}`);
 
@@ -35,6 +35,10 @@ const test2 = (): void => {
 };
 
 export const testGetCamelCase = (): void => {
+  console.log(`👋👋 NEW TEST 👋👋
+--> ${testName} <--\n`);
   test1();
   test2();
+  console.log(`-->${testName} <--
+🔚🔚 END OF TEST 🔚🔚\n`);
 };

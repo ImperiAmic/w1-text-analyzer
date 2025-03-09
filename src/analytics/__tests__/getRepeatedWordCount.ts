@@ -1,13 +1,14 @@
 import { getRepeatedWordCount } from "../index.js";
 
+const testName = "getRepeatedWordCount function";
+
 const test1 = (): void => {
   const text = "Què pasa neng neng neng";
   const word = "neng";
   const getWordCountExpectedResult = 3;
   const test = getRepeatedWordCount(text, word) === getWordCountExpectedResult;
 
-  console.log(`Testing - getRepeatedWordCount
-📝 Test: "${text}"
+  console.log(`📝 Test: "${text}"
 🤔 Expected result: ${getWordCountExpectedResult}
 👀 Actual result: ${getRepeatedWordCount(text, word)}`);
 
@@ -25,8 +26,7 @@ neng neng`;
   const getWordCountExpectedResult = 3;
   const test = getRepeatedWordCount(text, word) === getWordCountExpectedResult;
 
-  console.log(`Testing - getRepeatedWordCount
-📝 Test: "${text}"
+  console.log(`📝 Test: "${text}"
 🤔 Expected result: ${getWordCountExpectedResult}
 👀 Actual result: ${getRepeatedWordCount(text, word)}`);
 
@@ -43,8 +43,7 @@ const test3 = (): void => {
   const getWordCountExpectedResult = 0;
   const test = getRepeatedWordCount(text, word) === getWordCountExpectedResult;
 
-  console.log(`Testing - getRepeatedWordCount
-📝 Test: "${text}"
+  console.log(`📝 Test: "${text}"
 🤔 Expected result: ${getWordCountExpectedResult}
 👀 Actual result: ${getRepeatedWordCount(text, word)}`);
 
@@ -56,7 +55,11 @@ const test3 = (): void => {
 };
 
 export const testGetRepeatedWordCount = (): void => {
+  console.log(`👋👋 NEW TEST 👋👋
+--> ${testName} <--\n`);
   test1();
   test2();
   test3();
+  console.log(`-->${testName} <--
+🔚🔚 END OF TEST 🔚🔚\n`);
 };

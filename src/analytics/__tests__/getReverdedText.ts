@@ -1,14 +1,15 @@
-import { getReverdedWords } from "../index.js";
+import { getRevertedWords } from "../index.js";
+
+const testName = "getRevertedWords function";
 
 const test1 = (): void => {
   const text = "Què passa nen estic content";
   const getRevertedTextExpectedResult = "èuQ assap nen citse tnetnoc";
-  const test = getReverdedWords(text) === getRevertedTextExpectedResult;
+  const test = getRevertedWords(text) === getRevertedTextExpectedResult;
 
-  console.log(`Testing - getReverdedText
-📝 Test: "${text}"
+  console.log(`📝 Test: "${text}"
 🤔 Expected result: ${getRevertedTextExpectedResult}
-👀 Actual result: ${getReverdedWords(text)}`);
+👀 Actual result: ${getRevertedWords(text)}`);
 
   if (test) {
     console.log(`Test is OK ✅\n`);
@@ -20,12 +21,11 @@ const test1 = (): void => {
 const test2 = (): void => {
   const text = "";
   const getRevertedTextExpectedResult = "";
-  const test = getReverdedWords(text) === getRevertedTextExpectedResult;
+  const test = getRevertedWords(text) === getRevertedTextExpectedResult;
 
-  console.log(`Testing - getReverdedText
-📝 Test: "${text}"
+  console.log(`📝 Test: "${text}"
 🤔 Expected result: ${getRevertedTextExpectedResult}
-👀 Actual result: ${getReverdedWords(text)}`);
+👀 Actual result: ${getRevertedWords(text)}`);
 
   if (test) {
     console.log(`Test is OK ✅\n`);
@@ -35,6 +35,10 @@ const test2 = (): void => {
 };
 
 export const testGetRevertedText = (): void => {
+  console.log(`👋👋 NEW TEST 👋👋
+--> ${testName} <--\n`);
   test1();
   test2();
+  console.log(`-->${testName} <--
+🔚🔚 END OF TEST 🔚🔚\n`);
 };

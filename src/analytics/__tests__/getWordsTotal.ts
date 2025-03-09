@@ -1,5 +1,7 @@
 import { getWordsTotal } from "../index.js";
 
+const testName = "getWordsTotal function";
+
 const test1 = (): void => {
   const text = "Què passa nen estic content";
   const wordsExpectedResult = 5;
@@ -93,13 +95,13 @@ const test5 = (): void => {
 };
 
 export const testGetWordsTotal = (): void => {
-  console.log(`!! NEW TEST !!
---> getWordsTotal function <--\n`);
+  console.log(`👋👋 NEW TEST 👋👋
+--> ${testName} <--\n`);
   test1();
   test2();
   test3();
   test4();
   test5();
-  console.log(`-->getWordsTotal function <--
-!! END OF TEST !!\n`);
+  console.log(`-->${testName} <--
+🔚🔚 END OF TEST 🔚🔚\n`);
 };

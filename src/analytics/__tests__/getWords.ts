@@ -1,12 +1,13 @@
 import { getWordsList } from "../index.js";
 
+const testName = "getWordsList function";
+
 const test1 = (): void => {
   const text = ["Què", "passa", "neng"];
   const getWordsExpectedResult = "Què,passa,neng";
   const test = getWordsList(text) === getWordsExpectedResult;
 
-  console.log(`Testing - getShortWordsCount
-📝 Test: "${text}"
+  console.log(`📝 Test: "${text}"
 🤔 Expected result: ${getWordsExpectedResult}
 👀 Actual result: ${getWordsList(text)}`);
 
@@ -22,8 +23,7 @@ const test2 = (): void => {
   const getWordsExpectedResult = "Què,,neng";
   const test = getWordsList(text) === getWordsExpectedResult;
 
-  console.log(`Testing - getShortWordsCount
-📝 Test: "${text}"
+  console.log(`📝 Test: "${text}"
 🤔 Expected result: ${getWordsExpectedResult}
 👀 Actual result: ${getWordsList(text)}`);
 
@@ -35,6 +35,10 @@ const test2 = (): void => {
 };
 
 export const testGetWords = (): void => {
+  console.log(`👋👋 NEW TEST 👋👋
+--> ${testName} <--\n`);
   test1();
   test2();
+  console.log(`-->${testName} <--
+🔚🔚 END OF TEST 🔚🔚\n`);
 };

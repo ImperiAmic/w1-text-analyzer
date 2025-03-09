@@ -61,7 +61,7 @@ export const getRepeatedWordCount = (
   return filteredWords.length;
 };
 
-export const getReverdedWords = (text: string): string => {
+export const getRevertedWords = (text: string): string => {
   const words = text.split(" ");
   const wordsCharacters: string[] = words.map((word) =>
     word.split("").reverse().join("")

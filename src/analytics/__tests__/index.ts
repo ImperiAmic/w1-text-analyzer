@@ -8,12 +8,12 @@ import { testGetRevertedText } from "./getReverdedText.js";
 import { testHideWords } from "./hideWords.js";
 import { testGetCamelCase } from "./getCamelCase.js";
 
-// testGetParagraphsTotal();
+testGetParagraphsTotal();
 testGetWordsTotal();
-/* testGetCharacterCount();
+testGetCharacterCount();
 testGetShortWordsCount();
 testGetWords();
 testGetRepeatedWordCount();
 testGetRevertedText();
 testHideWords();
-testGetCamelCase(); */
+testGetCamelCase();

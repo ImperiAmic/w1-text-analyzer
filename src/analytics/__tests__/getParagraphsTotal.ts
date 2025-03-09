@@ -1,5 +1,7 @@
 import { getParagraphsTotal } from "../index.js";
 
+const testName = "paragraphsExpectedResult function";
+
 const test1 = (): void => {
   const text = `Què passa nen
 
@@ -13,8 +15,7 @@ també`;
   const paragraphsExpectedResult = 4;
   const test = getParagraphsTotal(text) === paragraphsExpectedResult;
 
-  console.log(`Testing - getParagraphsTotal
-📝 Test: "${text}"
+  console.log(`📝 Test: "${text}"
 🤔 Expected result: ${paragraphsExpectedResult}
 👀 Actual result: ${getParagraphsTotal(text)}`);
 
@@ -30,8 +31,7 @@ const test2 = (): void => {
   const paragraphsExpectedResult = 1;
   const test = getParagraphsTotal(text) === paragraphsExpectedResult;
 
-  console.log(`Testing - getParagraphsTotal
-📝 Test: "${text}"
+  console.log(`📝 Test: "${text}"
 🤔 Expected result: ${paragraphsExpectedResult}
 👀 Actual result: ${getParagraphsTotal(text)}`);
 
@@ -47,8 +47,7 @@ const test3 = (): void => {
   const paragraphsExpectedResult = 0;
   const test = getParagraphsTotal(text) === paragraphsExpectedResult;
 
-  console.log(`Testing - getParagraphsTotal
-📝 Test: "${text}"
+  console.log(`📝 Test: "${text}"
 🤔 Expected result: ${paragraphsExpectedResult}
 👀 Actual result: ${getParagraphsTotal(text)}`);
 
@@ -64,8 +63,7 @@ const test4 = (): void => {
   const paragraphsExpectedResult = 0;
   const test = getParagraphsTotal(text) === paragraphsExpectedResult;
 
-  console.log(`Testing - getParagraphsTotal
-📝 Test: "${text}"
+  console.log(`📝 Test: "${text}"
 🤔 Expected result: ${paragraphsExpectedResult}
 👀 Actual result: ${getParagraphsTotal(text)}`);
 
@@ -85,8 +83,7 @@ const test5 = (): void => {
   const paragraphsExpectedResult = 0;
   const test = getParagraphsTotal(text) === paragraphsExpectedResult;
 
-  console.log(`Testing - getParagraphsTotal
-📝 Test: "${text}"
+  console.log(`📝 Test: "${text}"
 🤔 Expected result: ${paragraphsExpectedResult}
 👀 Actual result: ${getParagraphsTotal(text)}`);
 
@@ -98,9 +95,13 @@ const test5 = (): void => {
 };
 
 export const testGetParagraphsTotal = (): void => {
+  console.log(`👋👋 NEW TEST 👋👋
+--> ${testName} <--\n`);
   test1();
   test2();
   test3();
   test4();
   test5();
+  console.log(`-->${testName} <--
+🔚🔚 END OF TEST 🔚🔚\n`);
 };
