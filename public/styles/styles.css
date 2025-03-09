@@ -33,6 +33,11 @@ h1 {
   text-decoration: underline;
 }
 
+h1,
+h2 {
+  font-size: 1.4em;
+}
+
 textarea,
 input,
 button {
@@ -69,7 +74,6 @@ a:hover {
 
 h2 {
   margin-top: 0;
-  font-size: large;
 }
 
 .container {
